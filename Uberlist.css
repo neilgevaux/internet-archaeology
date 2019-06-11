@@ -8,15 +8,15 @@
 	width: 100%;
 	height: 110px;
 	display: grid;
-	grid-template-columns: 5% 100px 30px auto 5%;
+	grid-template-columns: 5% 30px auto 5%;
 	grid-template-rows: 5% 40px auto 5%;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	grid-template-areas:
-		". . . . ."
-		". issueImage issueNo issueTitle ."
-		". issueImage issueDesc issueDesc ."
-		". . . . .";
+		". . . ."
+		". issueNo issueTitle ."
+		". issueNo issueDesc ."
+		". . . .";
 	
 	-o-transition:.3s;
 	-ms-transition:.3s;
@@ -74,7 +74,7 @@
     height: 60px;
     display: grid;
     grid-template-columns: 60px auto;
-    grid-template-rows: 30px auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
         'articleImageArea articleTitleArea' 
         'articleImageArea articleAuthorArea';
